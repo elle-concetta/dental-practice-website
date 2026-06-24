@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+    <!--
+    ══════════════════════════════════════════════════════════════════════════════
+    SITE-WIDE SEO DEFAULTS
+    These values are used as fallbacks on any page that doesn't set its own SEO.
+    Per-page titles and descriptions are controlled by the <Seo> component inside
+    each page file (src/pages/*.tsx).
+    ══════════════════════════════════════════════════════════════════════════════
+
+    ── SITE TITLE ──────────────────────────────────────────────────────────────
+    Shown in the browser tab when no page-level title is set.
+    Recommended format: "[Practice Name] | [City] Dentist"
+    -->
+    <title>Your Practice Name | Dentist in [City, State]</title>
+
+    <!--
+    ── DEFAULT META DESCRIPTION ────────────────────────────────────────────────
+    Used on the home page and any page without a custom description.
+    Keep under 155 characters. Include your city and top 1-2 services.
+    -->
+    <meta name="description" content="[Your Practice Name] offers luxury dental care in [City, State]. Implants, cosmetic dentistry, clear aligners, and more. Book your appointment today." />
+
+    <meta name="robots" content="index, follow" />
+
+    <!--
+    ── OPEN GRAPH (Social Sharing) ──────────────────────────────────────────────
+    Controls how your site appears when shared on Facebook, LinkedIn, etc.
+    Replace with your practice name and description.
+    -->
+    <meta property="og:title" content="Your Practice Name | Dentist in [City, State]" />
+    <meta property="og:description" content="[Your Practice Name] offers luxury dental care in [City, State]. Implants, cosmetic dentistry, clear aligners, and more." />
+    <meta property="og:type" content="website" />
+
+    <!--
+    ── TWITTER / X CARD ────────────────────────────────────────────────────────
+    Controls how your site appears when shared on Twitter/X.
+    -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Practice Name | Dentist in [City, State]" />
+    <meta name="twitter:description" content="[Your Practice Name] offers luxury dental care in [City, State]. Implants, cosmetic dentistry, clear aligners, and more." />
+
+    <!--
+    ── SOCIAL SHARING IMAGE ─────────────────────────────────────────────────────
+    Replace opengraph.jpg in the /public folder with your own image.
+    Ideal size: 1200 × 630 pixels (landscape). Shows on Facebook, LinkedIn, etc.
+    -->
+    <meta property="og:image" content="/opengraph.jpg" />
+    <meta name="twitter:image" content="/opengraph.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
