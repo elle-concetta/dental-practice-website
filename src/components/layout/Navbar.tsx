@@ -52,6 +52,13 @@ export default function Navbar() {
           <NavigationMenu>
             <NavigationMenuList className="gap-1">
 
+              {/* Home */}
+              <NavigationMenuItem>
+                <Link href="/" className="text-sm font-medium hover:text-secondary transition-colors px-3 py-2">
+                  Home
+                </Link>
+              </NavigationMenuItem>
+
               {/* Our Story dropdown */}
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-sm font-medium hover:text-secondary transition-colors bg-transparent">
@@ -206,6 +213,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-muted py-4 px-4 flex flex-col">
+          <Link href="/" className="text-lg font-medium text-primary py-3 border-b border-muted">Home</Link>
+
           {/* Our Story */}
           <button
             className="flex items-center justify-between text-lg font-medium text-primary py-3 border-b border-muted"
