@@ -1,6 +1,6 @@
 # Dental Practice Website Template
 
-A dental practice website with a built-in AI chat assistant. Built with React + Vite + Tailwind. Designed to be handed off to any dental practice — fill in the placeholder text, swap the images, connect the chat API, and launch.
+A dental practice website with a built-in AI chat assistant. Built with React + Vite + Tailwind. 
 
 **Live preview path:** `/dental/`
 
