@@ -1,14 +1,8 @@
-# Dental Practice Website Template
+# Dental Practice Website
 
-A dental practice website with a built-in AI chat assistant. Built with React + Vite + Tailwind. 
+A dental practice website with a built-in AI chat assistant. Built with React, Vite, and Tailwind. 
 
-**Live preview path:** `/dental/`
-
----
-
-## Quick-start checklist
-
-Before going live, work through these in order:
+## Checklist
 
 - [ ] Replace all `[YOUR PRACTICE NAME]` placeholders
 - [ ] Replace all `[DOCTOR NAME]` placeholders
@@ -21,9 +15,7 @@ Before going live, work through these in order:
 - [ ] Update financing/membership plan details
 - [ ] Confirm your real insurance list on the For Patients page
 
----
-
-## Getting started
+## Getting Started
 
 ### Prerequisites
 
@@ -33,17 +25,20 @@ Before going live, work through these in order:
 ### Install & run
 
 ```bash
+rm .npmrc
+npm install
+npm run dev
+```
+
+```bash
 pnpm install
 pnpm --filter @workspace/dental run dev
 ```
 
 The site runs at `http://localhost:<PORT>/dental/`.
 
----
 
-## Replacing placeholder text
-
-Search the project for the bracketed placeholders below and replace them with your real content.
+## Replacing Placeholder Text
 
 | Placeholder | Replace with |
 |---|---|
