@@ -2,19 +2,6 @@
 
 A dental practice website with a built-in AI chat assistant. Built with React, Vite, and Tailwind. 
 
-## Checklist
-
-- [ ] Replace all `[YOUR PRACTICE NAME]` placeholders
-- [ ] Replace all `[DOCTOR NAME]` placeholders
-- [ ] Replace all `[City, State]` placeholders
-- [ ] Replace all `[PHONE]` placeholders
-- [ ] Swap in your logo (`public/logo.svg`)
-- [ ] Replace the 7 stock photos in `public/`
-- [ ] Fill in the SEO title and description on every page
-- [ ] Connect the AI chat to a real API endpoint
-- [ ] Update financing/membership plan details
-- [ ] Confirm your real insurance list on the For Patients page
-
 ## Getting Started
 
 ### Prerequisites
@@ -37,60 +24,9 @@ pnpm --filter @workspace/dental run dev
 
 The site runs at `http://localhost:<PORT>/dental/`.
 
-
-## Replacing Placeholder Text
-
-| Placeholder | Replace with |
-|---|---|
-| `[YOUR PRACTICE NAME]` | e.g. `Bright Smiles Family Dentistry` |
-| `[DOCTOR NAME]` | e.g. `Dr. Sarah Chen, DDS` |
-| `[City, State]` | e.g. `Austin, TX` |
-| `[PHONE]` | e.g. `(512) 555-0123` |
-| `[Practice Name]` | Same as above — used inside SEO fields |
-
-The fastest way to find them all:
-
-```bash
-grep -r "\[YOUR" src/
-grep -r "\[DOCTOR" src/
-grep -r "\[City" src/
-grep -r "\[PHONE" src/
-grep -r "\[Practice" src/
-```
-
----
-
-## Replacing the logo
-
-1. Export your logo as an SVG or PNG.
-2. Save it as `public/logo.svg` (overwrite the placeholder).
-3. If you use a PNG instead, update the `src` in `src/components/layout/Navbar.tsx`:
-
-```tsx
-<img
-  src={`${import.meta.env.BASE_URL}logo.png`}
-  alt="Your Practice Name"
-  className="h-10 w-auto"
-/>
-```
-
-> The `BASE_URL` prefix is required — the site runs under `/dental/` so root-relative paths will 404.
-
----
-
 ## Replacing the photos
 
 All photos live in `public/`. Drop in your own files with the same filenames and the site picks them up automatically.
-
-| File | Used on |
-|---|---|
-| `hero-office.png` | Home hero, Services header background |
-| `office-exterior.png` | Home gallery |
-| `team-photo.png` | Home gallery, Technology service page |
-| `doctor-portrait.png` | Home gallery, service detail pages |
-| `service-cosmetic.png` | Home gallery, Cosmetic/Clear Aligners services |
-| `service-pediatric.png` | Home gallery |
-| `opengraph.jpg` | Social media share preview (1200×630px) |
 
 Recommended image sizes: **1200–1800px wide**, exported at 80% quality JPEG or compressed PNG.
 
